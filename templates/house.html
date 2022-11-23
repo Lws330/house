@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>上海链家网二手房信息</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="static/assets/img/img.png" rel="apple-touch-icon">
+  <link href="static/assets/img/img.png" rel="icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i,900" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="static/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="static/assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="static/assets/css/style.css" rel="stylesheet">
+    <link href="../static/assets/css/search.css">
+</head>
+
+<body>
+
+
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="container">
+
+      <div class="logo float-left">
+        <h1 class="text-light"><a href="./team.html"><span>画玖</span></a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="temp.html"><img src="static/assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <nav class="nav-menu float-right d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="/index">首页<i class="la la-angle-down"></i></a></li>
+          <li><a href="/house">二手房信息</a></li>
+            <li><a href="/country">二手房地区分布</a></li>
+            <li><a href="/show">查询房子信息</a></li>
+          <li><a href="/team">团队</a></li>
+
+        </ul>
+      </nav><!-- .nav-menu -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Our Team Section ======= -->
+    <div id="team" class="team">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>上海链家网二手房信息</h2>
+        </div>
+
+
+        <!-- ======= Counts Section ======= -->
+    <div class="counts section-bg">
+      <div class="container">
+
+          <table class="table table-striped">
+
+              <tr>
+                  <td>id</td>
+                  <td>区域</td>
+                  <td>小区</td>
+                  <td>房价</td>
+                  <td>房子朝向</td>
+                  <td>户型</td>
+                  <td>楼层类型</td>
+                  <td>楼层数</td>
+                  <td>是否靠近地铁</td>
+                  <td>是否精装</td>
+                  <td>是否随时看房</td>
+                  <td>是否新上</td>
+                  <td>维护时间</td>
+                  <td>价格</td>
+
+              </tr>
+
+              {% for house in houses %}
+              <tr>
+
+
+                  <td>
+                      <a href="{{ house[1] }}" target="_blank">
+                        {{ house[0] }}
+                          </a>
+                  </td>
+
+                  <td>{{house[1] }}</td>
+                  <td>{{house[2] }}</td>
+                  <td>{{house[3] }}</td>
+                  <td>{{house[4]}}</td>
+                  <td>{{house[5]}}</td>
+                  <td>{{house[6]}}</td>
+                  <td>{{house[7]}}</td>
+                  <td>{{house[8]}}</td>
+                  <td>{{house[9]}}</td>
+                  <td>{{house[10]}}</td>
+                  <td>{{house[11]}}</td>
+                  <td>{{house[12]}}</td>
+                  <td>{{house[13]}}</td>
+
+              </tr>
+
+              {% endfor %}
+
+
+          </table>
+      </div>
+    </div>
+        </div>
+
+      </div>
+
+    </section><!-- End Counts Section -->
+
+      </div>
+    </section><!-- End Our Team Section -->
+
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>画玖</span></strong>. All Rights Reserved
+      </div>
+    
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="static/assets/vendor/jquery/jquery.min.js"></script>
+  <script src="static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="static/assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="static/assets/vendor/php-email-form/validate.js"></script>
+  <script src="static/assets/vendor/jquery-sticky/jquery.sticky.js"></script>
+  <script src="static/assets/vendor/venobox/venobox.min.js"></script>
+  <script src="static/assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="static/assets/vendor/counterup/counterup.min.js"></script>
+  <script src="static/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="static/assets/vendor/aos/aos.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="static/assets/js/main.js"></script>
+
+</body>
+
+</html>
